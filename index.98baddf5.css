@@ -1,0 +1,473 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+@import "https://fonts.googleapis.com/css?family=Kumbh+Sans:400,600|Roboto+Flex:400|Roboto:500|Crimson+Pro:400";
+.nav-bar {
+  white-space: nowrap;
+  width: 100%;
+  height: 6.25%;
+  background-color: #fff;
+  border-bottom: 1px solid #b6b6b6;
+  justify-content: space-between;
+  display: flex;
+}
+
+.back-block {
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 1.5em;
+  display: flex;
+}
+
+.back-block div {
+  margin: 1rem;
+}
+
+.my-lists-block {
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-self: flex-start;
+  align-items: flex-start;
+  margin: 5px;
+  font-size: 1em;
+  display: flex;
+}
+
+.my-lists-block div {
+  margin-right: .5rem;
+}
+
+h3 {
+  color: var(--black);
+  font-family: var(--font-family-kumbh_sans);
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.Title-Section {
+  justify-content: space-between;
+  display: flex;
+}
+
+.Title-Section * {
+  margin: 1rem;
+}
+
+.Details-Section-Outer {
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.Details-Section-Inner {
+  background: #eee;
+  border-radius: 12px 0 0 12px;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: .7em;
+  display: flex;
+}
+
+li {
+  margin: 6px;
+}
+
+.Call-Map-Icons {
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 1rem;
+  display: flex;
+}
+
+.Carousel {
+  width: 360px;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.Inner-Carousel {
+  width: 720px;
+  display: flex;
+}
+
+.Main-Image {
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+  pointer-events: none;
+}
+
+.Side-Image-Grid {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Side-Image-Grid li {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  border: 1px solid #fefefe;
+  margin: 0;
+}
+
+.Side-Images {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  margin: 0;
+}
+
+.CommentSec {
+  margin-top: 10px;
+}
+
+.UserName {
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.Comment-Outer {
+  padding-bottom: 20px;
+}
+
+.Comment-Outer-Left {
+  padding-right: 10px;
+}
+
+.Comment-Outer-Right {
+  padding-left: 10px;
+}
+
+.Comment-Inner {
+  background: #eee;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: .7em;
+  display: flex;
+}
+
+.Comment-Inner-Left {
+  border-radius: 0 12px 12px 0;
+}
+
+.Comment-Inner-Right {
+  border-radius: 12px 0 0 12px;
+}
+
+.CommentSec li {
+  margin: 0;
+}
+
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+
+.restaurant-details {
+  width: 360px;
+  height: 800px;
+  color: #000;
+  font-family: var(--font-family-kumbh_sans);
+  background-color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  overflow: scroll;
+}
+
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+
+.restaurant-feed {
+  width: 360px;
+  height: 800px;
+  color: #000;
+  font-family: var(--font-family-kumbh_sans);
+  background-color: #ffffe0;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.body {
+  width: 100%;
+  z-index: 3;
+  background-color: #f3f3f3;
+  align-items: flex-start;
+  display: block;
+  overflow: hidden;
+}
+
+.restaurant-box {
+  height: 220px;
+  width: 100%;
+  position: relative;
+}
+
+.restaurant-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.top-bar {
+  height: 45px;
+  width: 100%;
+  background-color: #c4c4c4ad;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+
+.bottom-bar {
+  height: 45px;
+  width: 359px;
+  background-color: #c4c4c4ad;
+  position: absolute;
+  top: 175px;
+  left: 0;
+}
+
+.title {
+  height: 32px;
+  letter-spacing: .84px;
+  width: 319px;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+
+.address {
+  height: 21px;
+  letter-spacing: .42px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.opening-hours {
+  height: 21px;
+  letter-spacing: .42px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
+.rating {
+  height: 16px;
+  letter-spacing: .42px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+.search-bar {
+  white-space: nowrap;
+  width: 100vw;
+  height: 12vw;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5vh;
+  display: flex;
+}
+
+.menu-button {
+  height: 55%;
+  width: 8%;
+  margin: 2.5vh 0 2vh 4vw;
+}
+
+.searchBar {
+  height: 70%;
+  background-color: #e4e4e4;
+  border-radius: 2vh;
+  flex-grow: 2;
+  align-items: center;
+  margin: 1.5vh 2rem 1rem 3rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.searchBarText {
+  color: #b6b6b6;
+  margin-left: 2vw;
+  font-size: 2vh;
+}
+
+.filter-bar {
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .2vh;
+  display: flex;
+}
+
+.filter-box {
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+.feed-box {
+  height: 50%;
+  width: 100%;
+  justify-content: space-around;
+  padding: .3vh;
+  display: flex;
+}
+
+.textSpan {
+  flex-direction: column;
+  display: flex;
+}
+
+.locationTextDiv {
+  text-align: right;
+  margin-right: 4vw;
+  font-size: 2.5vh;
+}
+
+.restaurantTextDiv {
+  text-align: right;
+  margin-top: .2vh;
+  margin-right: 4vw;
+  font-size: 1.8vh;
+}
+
+.FeedButton {
+  height: 3.25vh;
+  background-color: #e4e4e4;
+  border-radius: 3vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Food, .Ambience, .Restaurant {
+  width: 14vw;
+}
+
+.Filter, .Sorting {
+  width: 22vw;
+}
+
+.FeedButtonIcon {
+  height: 75%;
+  width: 70%;
+}
+
+.feedNavigation {
+  width: 100%;
+  min-height: 15vh;
+  font-family: var(--font-family-kumbh_sans);
+  background-color: #fff;
+  flex-direction: column;
+  flex-grow: 2;
+  display: flex;
+}
+
+.Bottom-Navigation {
+  height: 5.25vh;
+  width: 100vw;
+  background-color: #faf9f9;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.ButtonSymbol {
+  height: 6vh;
+  width: 6vw;
+}
+
+.photoFeed {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.photoBody {
+  width: 100%;
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.photoBodyList {
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.photoBody > ul > li {
+  object-fit: cover;
+  width: 50vw;
+  height: 30vh;
+  border: 2px solid #fff;
+  margin: 0;
+}
+
+.feedImage {
+  object-fit: cover;
+  width: 50vw;
+  height: 30vh;
+}
+
+.back-block {
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 1.5em;
+  display: flex;
+}
+
+.Main-Image {
+  object-fit: cover;
+  width: 360px;
+  height: 360px;
+  pointer-events: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size-l: 15px;
+  --font-size-m: 14px;
+  --font-size-s: 13px;
+  --font-size-xl: 18px;
+  --font-size-xs: 10px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 28px;
+  --font-family-crimson_pro: "Crimson Pro", Helvetica;
+  --font-family-kumbh_sans: "Kumbh Sans", Helvetica;
+  --font-family-kumbh_sans-medium: "Kumbh Sans-Medium", Helvetica;
+  --font-family-min_icon_square-bold: "Min Icon Square-Bold", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+  --font-family-roboto-regular: "Roboto-Regular", Helvetica;
+  --font-family-roboto_flex: "Roboto Flex", Helvetica;
+}
+
+/*# sourceMappingURL=index.98baddf5.css.map */
